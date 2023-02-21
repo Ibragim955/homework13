@@ -1,5 +1,9 @@
 public class Main {
     public static Book createBook(String name, int age){
+        Author esenin = new Author("Александр","Пушкин");
+        Author lermantov = new Author("Михаил","Лермантов");
+        System.out.println("автор книги " + esenin);
+        System.out.println("автор книги " + lermantov);
 Book book = new Book();
 book.book = name;
 book.age = age;
@@ -7,8 +11,6 @@ book.age = age;
 
     }
     public static void main(String[] args) {
-        String author = "Ivanov Ivan";
-        System.out.println("author = " + author);
         Book name = createBook("sunna",1999);
         System.out.println("name.book = " + name.getName());
             System.out.println("name.age = " + name.getAge());
