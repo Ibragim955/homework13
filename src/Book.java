@@ -1,4 +1,5 @@
 public class Book {
+    public Author author;
   String book;
    int age;
 
