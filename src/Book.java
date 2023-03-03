@@ -1,8 +1,8 @@
 public class Book {
+
     public Author author;
     String book;
     int age;
-
 
     public Book(String name, int age) {
         this.book = name;
@@ -24,4 +24,10 @@ public class Book {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Название книги" + book + ",год издания '" + age + '\'' + ", автор " + author + '}';
+    }
+
 }
